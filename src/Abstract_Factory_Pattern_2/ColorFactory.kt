@@ -5,7 +5,7 @@ import Abstract_Factory_Pattern_2.Interfaces.Color
 import Abstract_Factory_Pattern_2.Interfaces.Shape
 
 class ColorFactory : AbstractFactory() {
-    override fun getColor(color: String): Color? {
+    override fun getColor(color: String?): Color? {
         if(color.isNullOrEmpty())
             return null
 
@@ -19,7 +19,7 @@ class ColorFactory : AbstractFactory() {
         return null
     }
 
-    override fun getShape(shape: String): Shape? {
+    override fun getShape(shape: String?): Shape? {
         return null
     }
 

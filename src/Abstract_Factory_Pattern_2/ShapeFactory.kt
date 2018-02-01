@@ -5,11 +5,11 @@ import Abstract_Factory_Pattern_2.Interfaces.Color
 import Abstract_Factory_Pattern_2.Interfaces.Shape
 
 class ShapeFactory : AbstractFactory() {
-    override fun getColor(color: String): Color? {
+    override fun getColor(color: String?): Color? {
         return null
     }
 
-    override fun getShape(shape: String): Shape? {
+    override fun getShape(shape: String?): Shape? {
         if(shape.isNullOrEmpty())
             return null
 
